@@ -1,1 +1,117 @@
-<p>metodologias works!</p>
+<div class="metodologias-content">
+    <h2>Scrum</h2>
+	<p>O Scrum é uma metodologia ágil de desenvolvimento de software que se baseia em conceitos tradicionais da engenharia de produção. Seu principal objetivo é entregar software de alta qualidade em intervalos de tempo fixos chamados Sprints. A metodologia se apoia em três pilares: transparência, inspeção e adaptação, permitindo uma abordagem flexível e iterativa. Existem quatro eventos principais no Scrum para inspeção e adaptação: Reunião de Planejamento da Sprint, Daily Scrum, Reunião de Revisão da Sprint e Retrospectiva da Sprint. Os valores do Scrum estão alinhados com os princípios do Manifesto Ágil, promovendo colaboração, transparência e responsabilidade individual. Os papéis no Scrum são Scrum Master, Product Owner e Scrum Team, cada um desempenhando funções específicas no projeto.</p>
+    <button class="toggle-button" (click)="toggleList1()"><b>▼</b></button>
+    <ul *ngIf="isListVisible1" class="retractable-list">
+    <p>Dentre suas atividades, estão:</p>
+    <ol>
+	<li><b>Product Backlog:</b> É uma lista dinâmica e prioritária de todas as funcionalidades, requisitos e melhorias desejadas para o produto. É constantemente atualizada e refinada pelo Product Owner, com base no conhecimento atual e nas necessidades do cliente.</li>
+	<li><b>Effort Estimation:</b> É o processo de avaliar o tempo e o esforço necessário para concluir cada item do Product Backlog. O time, juntamente com o Product Owner e o Scrum Master, realiza essa estimativa, levando em consideração a complexidade, o risco e a dependência de outros itens.</li>
+    <li><b>Sprint:</b> É um período de tempo fixo, geralmente de duas a quatro semanas, durante o qual a equipe trabalha para entregar um conjunto de funcionalidades priorizadas do Product Backlog. É uma unidade de trabalho e entrega dentro do projeto Scrum.</li>
+    <li><b>Sprint Planning Meeting:</b> É uma reunião realizada no início de cada Sprint, na qual o time, o Scrum Master e o Product Owner se reúnem para definir quais itens do Product Backlog serão incluídos na Sprint e como eles serão implementados. O resultado dessa reunião é o Sprint Backlog.</li>
+    <li><b>Sprint Backlog:</b> É uma lista de tarefas ou atividades específicas que foram selecionadas para serem concluídas durante a Sprint. É uma visão mais detalhada do trabalho a ser realizado, derivado do Product Backlog. O Scrum Master é responsável por garantir que o Sprint Backlog seja mantido intacto durante o Sprint.</li>
+    <li><b>Daily Scrum:</b> É uma reunião diária realizada pela equipe, facilitada pelo Scrum Master, na qual cada membro compartilha o que foi feito desde a última reunião, o que será feito até a próxima e quaisquer obstáculos ou impedimentos que estão enfrentando. O objetivo é manter todos alinhados e identificar rapidamente quaisquer problemas que possam afetar o progresso do trabalho.</li>
+    <li><b>Sprint Review Meeting:</b> É uma reunião realizada no final de cada Sprint, na qual a equipe apresenta os resultados alcançados ao Product Owner, aos gerentes e aos clientes. É uma oportunidade de demonstrar as funcionalidades concluídas e receber feedback. Como resultado dessa reunião, o Product Backlog pode ser ajustado e atualizado com base no aprendizado adquirido durante o Sprint.</li>
+    </ol></ul>
+
+    <h2>Extreming Programming - XP</h2>
+	<p>Extreme Programming (XP) é uma abordagem ágil de desenvolvimento de software que prioriza a comunicação clara, a simplicidade, o feedback contínuo e a coragem para enfrentar desafios. Por meio de práticas como desenvolvimento orientado a testes, programação em pares, integração contínua, releases frequentes, design simples e uso de metáforas, o XP busca entregar valor ao cliente de forma rápida e adaptável, permitindo que a equipe de desenvolvimento responda às mudanças de requisitos e promova a melhoria contínua do software.</p>
+    <button class="toggle-button" (click)="toggleList2()"><b>▼</b></button>
+    <ul *ngIf="isListVisible2" class="retractable-list">
+	<p>Dentre suas atividades, estão:</p>
+    <ol>
+    <li><b>Planning Game:</b> Reunião realizada no início de um ciclo entre o cliente e os desenvolvedores para priorizar as atividades. O cliente está presente no dia a dia do projeto, fornecendo uma compreensão mais clara das funcionalidades a serem desenvolvidas.</li>
+	<li><b>Peer Programming (Programação em Duplas):</b> Desenvolvimento das atividades realizado em duplas, o que otimiza a produção de código com qualidade. O código produzido por qualquer dupla pertence à equipe como um todo, permitindo modificações e melhorias por outras duplas.</li>
+	<li><b>Código Coletivo:</b> Todo o código produzido por qualquer dupla pertence à equipe, possibilitando que outras duplas o modifiquem.</li>
+	<li><b>Metáfora:</b> Utilização de analogias para facilitar a comunicação com o cliente, buscando uma compreensão mais ampla do contexto e das funcionalidades.</li>
+	<li><b>Projeto Simples:</b> O sistema deve ser projetado de forma simples em todos os momentos, removendo qualquer complexidade desnecessária assim que for identificada. A equipe busca eliminar o que é supérfluo, priorizando a simplicidade no desenvolvimento.</li>
+	<li><b>Releases Curtos:</b> Entrega ao cliente de conjuntos de funcionalidades que geram valor. Os releases devem ser o mais curtos possível, a fim de proporcionar ao cliente o máximo valor com o mínimo de tempo e esforço.</li>
+	<li><b>Refactoring:</b> Prática de modificar o código que está funcionando para torná-lo mais simples, eficiente e melhorar o design do projeto, entre outras melhorias.</li>
+	<li><b>Integração Contínua:</b> Realização de integração e testes entre as partes do sistema várias vezes ao longo do dia, garantindo uma integração fluida e detectando problemas de forma rápida.</li>
+	<li><b>Padrão de Desenvolvimento:</b> Adoção de padrões de código para facilitar a comunicação entre os membros da equipe.</li>
+	<li><b>Desenvolvimento Guiado por Testes:</b> Criação de testes automatizados para verificar o funcionamento do código, garantindo a qualidade e a funcionalidade do produto final.</li>
+	<li><b>Cliente Presente:</b> Incluir um cliente real no time de desenvolvimento, tornando-o disponível em tempo integral para responder a quaisquer questões relacionadas ao projeto em desenvolvimento.</li>
+	<li><b>Semana de 40 horas:</b> É sugerido que a equipe limite sua carga horária a no máximo 40 horas por semana e evite realizar horas extras por mais de duas semanas consecutivas. Essa abordagem visa garantir que a equipe esteja trabalhando de maneira sustentável e saudável, sem se sobrecarregar.</li>
+    </ol></ul>
+
+    <h2>Lean Software Development</h2>
+	<p>O Lean Software Development é uma abordagem que visa maximizar o valor entregue ao cliente no desenvolvimento de software, eliminando desperdícios e buscando eficiência. É baseado nos princípios do Lean, que enfatizam a entrega rápida de valor, a melhoria contínua, a eliminação de desperdícios e a integridade do sistema. Essa abordagem requer uma mudança cultural na organização, promovendo uma mentalidade enxuta e incorporando os princípios do Lean de forma integral às práticas organizacionais.</p>
+    <button class="toggle-button" (click)="toggleList3()"><b>▼</b></button>
+    <ul *ngIf="isListVisible3" class="retractable-list">
+	<p>Dentre suas atividades, estão:</p>
+    <ol>
+	<li><b>Elimine os desperdícios:</b> O princípio fundamental do Lean é eliminar tudo que não agrega valor ao cliente. Isso inclui funcionalidades extras, documentação desnecessária e funcionalidades com defeitos. É importante identificar as necessidades do cliente e entregar de forma rápida e com qualidade.</li>
+	<li><b>Amplifique o aprendizado:</b> O desenvolvimento de software é um processo de constante aprendizado. Os desenvolvedores devem experimentar, aprender com os erros e melhorar continuamente. O conhecimento adquirido deve ser compartilhado e utilizado para aprimorar o ambiente de desenvolvimento.</li>
+	<li><b>Decida o mais tarde possível:</b> Adiar decisões é uma prática importante no Lean. Isso permite que as decisões sejam tomadas em momentos de maior clareza e maturidade, evitando decisões precipitadas em momentos de incerteza.</li>
+	<li><b>Entregue o mais rápido possível:</b> A velocidade de entrega é essencial no Lean. O objetivo é entregar o software o mais rápido possível, de forma que os clientes não tenham tempo de mudar de ideia. Isso requer eficiência e redução do tempo de entrega.</li>
+	<li><b>Dê autonomia à equipe:</b> É importante construir equipes autônomas e motivadas. Os indivíduos devem ter o ambiente e o suporte necessário para realizar seu trabalho, tomando decisões, assumindo compromissos e buscando seus objetivos.</li>
+	<li><b>Construa com integridade:</b> A qualidade é essencial e não deve ser comprometida. É necessário entregar um produto de qualidade, que atenda às expectativas do cliente. A integridade percebida e a integridade conceitual são importantes, garantindo um equilíbrio entre funcionalidades, usabilidade, confiabilidade e economia.</li>
+	<li><b>Visualize o todo:</b> É fundamental ter uma visão ampla do sistema em desenvolvimento. Isso evita problemas de integridade e permite um melhor aproveitamento das particularidades do sistema. Não se deve tratar as partes de forma isolada, mas sim manter o equilíbrio entre todas elas.</li>
+    </ol></ul>
+
+    <h2>Adaptative Software Development - ASD</h2>
+	<p>O Adaptive Software Development (ASD) foi desenvolvido por James Highsmith em 1992, baseado em conceitos de teoria de sistemas adaptativos complexos. Ele incorpora influências do método Rapid Application Development (RAD) e se concentra nas pessoas, na entrega de resultados e na colaboração máxima. O ASD é especialmente adequado para projetos de e-business que exigem adaptação rápida e velocidade. Ele enfatiza a importância da comunicação através de interações pessoais, priorizando-as em vez de documentações complexas. O ciclo de vida do ASD consiste em especulação, colaboração e aprendizagem, proporcionando uma abordagem adaptativa e flexível para o desenvolvimento de software.</p>
+    <button class="toggle-button" (click)="toggleList4()"><b>▼</b></button>
+    <ul *ngIf="isListVisible4" class="retractable-list">
+    <p>Dentre suas atividades, estão:</p>
+    <ol>
+	<li><b>Especulação:</b> O projeto é iniciado, substituindo o planejamento tradicional. Durante essa fase, são utilizadas informações iniciais do projeto para conduzir o planejamento do ciclo adaptativo. Alguns elementos essenciais nesse processo incluem o calendário do projeto (data de entrega ou descrições dos usuários), a declaração da missão (feita pelo cliente), a definição dos objetivos de cada iteração e a atribuição das funcionalidades para cada iteração.</li>
+	<li><b>Colaboração:</b> Uma equipe de trabalho motivada cria um ambiente estável para se comunicar e colaborar eficientemente na resolução de problemas técnicos e requisitos de negócios. No entanto, a colaboração nem sempre é fácil de ser alcançada, pois a comunicação entre os membros da equipe pode ser desafiadora. Uma boa comunicação é fundamental para garantir uma colaboração efetiva.</li>
+	<li><b>Aprendizagem:</b> À medida que o ciclo adaptativo avança, há uma ênfase tanto na aprendizagem quanto na direção para a conclusão do ciclo. Durante todo o processo, a equipe busca aprender com as iterações anteriores e direcionar seus esforços para alcançar a conclusão bem-sucedida do ciclo adaptativo.</li>
+    </ol></ul>
+
+    <h2>Feature Driven Development - FDD</h2>
+	<p>O Feature Driven Development (FDD) é um método ágil de gestão e desenvolvimento de software que combina as melhores práticas da gestão ágil de projetos com uma abordagem completa de engenharia de software orientada a objetos. Criado por Jeff De Luca e Peter Coad, o FDD valoriza a entrega de resultados frequentes, tangíveis e funcionais. As características são consideradas blocos de funcionalidade valorizados pelo cliente e são implementadas em incrementos de software passíveis de entrega a cada duas semanas. O planejamento e o monitoramento do projeto são orientados pela hierarquia de características, tornando o processo mais eficiente e compreensível para todas as partes envolvidas.</p>
+    <button class="toggle-button" (click)="toggleList5()"><b>▼</b></button>
+    <ul *ngIf="isListVisible5" class="retractable-list">
+    <p>Dentre suas atividades, estão:</p>
+    <ol>
+	<li>Entrega de resultados úteis a cada duas semanas ou menos;</li>
+	<li>Divisão em blocos pequenos de funcionalidades de alto valor para o cliente, chamados de features;</li>
+	<li>Planejamento detalhado;</li>
+	<li>Rastreabilidade e relatórios precisos;</li>
+	<li>Monitoramento detalhado do projeto, com resumos de alto nível para clientes e gestores, focados em termos de negócio;</li>
+	<li>Fornece uma forma de avaliar, no início do projeto, a solidez do plano e das estimativas.</li>
+    </ol></ul>
+
+    <h2>Dynamic Systems Development Method - DSDM</h2>
+	<p>O Dynamic Systems Development Method (DSDM) é um método ágil baseado no Rapid Application Development (RAD) que surgiu no Reino Unido na década de 1990. Ele oferece uma estrutura para desenvolver e manter sistemas dentro de restrições de prazo apertado, usando prototipagem incremental em um ambiente controlado. O DSDM é dinâmico porque segue uma abordagem iterativa, permitindo a entrega contínua de funcionalidades com ajustes e melhorias contínuas. Ele adota a filosofia de que o desenvolvimento de software é um esforço exploratório, buscando entregar 80% de uma aplicação em 20% do tempo necessário para a entrega completa. O DSDM segue um ciclo de vida dividido em três fases: pré-projeto, projeto e pós-projeto, onde são realizadas atividades como estudo de viabilidade, estudo de negócio, iterações do modelo funcional, projeto e construção, implementação, manutenção e melhorias. A metodologia é apoiada pelo DSDM Consortium, uma organização internacional que promove e defende essa abordagem ágil.</p>
+    <button class="toggle-button" (click)="toggleList6()"><b>▼</b></button>
+    <ul *ngIf="isListVisible6" class="retractable-list">
+    <p>Dentre suas atividades, estão:</p>
+    <ol>
+	<li><b>Envolvimento ativo do usuário:</b> A participação dos usuários é crucial para o sucesso do projeto.</li>
+	<li><b>Empoderamento das pessoas com autoridade para tomar decisões:</b> As pessoas responsáveis pelo projeto devem ter a autoridade necessária para tomar decisões oportunas.</li>
+	<li><b>Foco na entrega frequente de produtos:</b> O projeto deve se concentrar em entregar valor de forma contínua e iterativa.</li>
+	<li><b>Alinhamento com o objetivo do negócio:</b> As entregas devem atender aos objetivos e necessidades do negócio para serem aceitas.</li>
+	<li><b>Desenvolvimento iterativo e incremental:</b> O desenvolvimento deve ser realizado em ciclos curtos e iterativos para refinar e convergir com precisão a solução do negócio.</li>
+	<li><b>Capacidade de reversão de mudanças:</b> Todas as mudanças feitas durante o desenvolvimento devem ser reversíveis, permitindo a adaptação conforme necessário.</li>
+	<li><b>Alinhamento de requisitos em um nível mais alto:</b> Os requisitos são definidos em um nível mais alto, permitindo flexibilidade e adaptação durante o desenvolvimento.</li>
+	<li><b>Teste integrado ao longo do ciclo de vida:</b> A atividade de teste é realizada de forma contínua e integrada durante todo o ciclo de vida do projeto.</li>
+	<li><b>Colaboração e cooperação entre as partes interessadas:</b> Uma abordagem colaborativa e cooperativa entre todos os envolvidos no projeto é essencial para alcançar os melhores resultados.</li>
+    </ol></ul>
+
+    <h2>Crystal</h2>
+	<p>O método Crystal, desenvolvido por Alistair Cockburn, é uma família de metodologias ágeis que se adapta às características específicas de cada projeto. Com sua formação de equipes baseada em cores, indicando níveis de responsabilidade, o Crystal busca promover a comunicação interpessoal e uma cultura de alta tolerância. Sua flexibilidade permite a escolha de abordagens mais estruturadas e processos detalhados para projetos maiores, enquanto projetos menores podem se beneficiar de uma abordagem mais leve. Em resumo, o Crystal enfatiza a adaptação, a colaboração e a comunicação como valores fundamentais em seu contexto ágil.</p>
+    <button class="toggle-button" (click)="toggleList7()"><b>▼</b></button>
+    <ul *ngIf="isListVisible7" class="retractable-list">
+    <p>Dentre suas atividades, estão:</p>
+    <ol>
+	<li><b>Desenvolvimento incremental:</b> O projeto deve adotar uma abordagem incremental, dividindo o trabalho em incrementos de quatro meses ou menos, com uma preferência por incrementos de um a três meses.</li>
+	<li><b>Oficinas de reflexão:</b> A equipe deve realizar oficinas de reflexão antes e depois de cada incremento.</li>
+    </ol></ul>
+
+    <h2>Kanban</h2>
+	<p>O Kanban é uma abordagem ágil que implementa os princípios do Desenvolvimento Lean de Produtos no contexto do desenvolvimento de software. Baseado no sistema visual de controle de produção da Toyota, o Kanban oferece uma abordagem menos prescritiva em comparação com os métodos ágeis tradicionais. David J. Anderson é um dos pioneiros no uso do Kanban em software, utilizando-o para visualizar e otimizar o fluxo de trabalho no desenvolvimento de software. O Kanban atua como um catalisador para introduzir ideias Lean na entrega de sistemas de software, focando em mudanças evolutivas e no estabelecimento de limites para o trabalho em andamento. Através do sistema Kanban, funcionalidades são "puxadas" com base na capacidade do sistema, em vez de serem "empurradas" por previsões ou demandas. A aparência do quadro do Kanban pode variar, mas sua essência é proporcionar visualização e controle do fluxo de trabalho.</p>
+    <button class="toggle-button" (click)="toggleList8()"><b>▼</b></button>
+    <ul *ngIf="isListVisible8" class="retractable-list">
+    <p>Dentre suas atividades, estão:</p>
+    <ol>
+	<li>Visualizar o trabalho em andamento;</li>
+	<li>Visualizar cada etapa da cadeia de valor, desde o conceito geral até o lançamento de software;</li>
+	<li>Limitar o Trabalho em Progresso (WIP - Work in Progress), estabelecendo restrições para a quantidade total de trabalho permitido em cada estágio;</li>
+	<li>Tornar explícitas as políticas que estão sendo seguidas;</li>
+	<li>Medir e gerenciar o fluxo de trabalho, possibilitando tomar decisões embasadas e visualizar as consequências dessas decisões;</li>
+	<li>Identificar oportunidades de melhoria, fomentando uma cultura de Kaizen em que a melhoria contínua é responsabilidade de todos.</li>
+    </ol></ul>
+</div>
