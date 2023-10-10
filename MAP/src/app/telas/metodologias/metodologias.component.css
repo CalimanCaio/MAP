@@ -1,0 +1,29 @@
+.metodologias-content {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #000;
+  }
+  
+  .toggle-button {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #0073e6; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    text-decoration: none;
+    border-radius: 100px;
+    transition: background-color 0.3s ease; /* Transição suave de cor ao passar o mouse */
+  }
+
+  .toggle-button:hover{
+    background-color: #0050a0; /* Cor de fundo do botão ao passar o mouse */
+  }

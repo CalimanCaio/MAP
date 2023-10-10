@@ -1,0 +1,24 @@
+.welcome-text {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .welcome-text h1 {
+    font-size: 40px;
+    color: #000;
+  }
+
+  .btn-metodologias {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0073e6; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease; /* Transição suave de cor ao passar o mouse */
+  }
+  
+  .btn-metodologias:hover {
+    background-color: #0050a0; /* Cor de fundo do botão ao passar o mouse */
+  }
+  
