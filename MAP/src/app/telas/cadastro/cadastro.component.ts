@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-//import { UserService } from '../user.service';
 
 @Component({
   selector: 'app-cadastro',
@@ -11,22 +10,26 @@ export class CadastroComponent {
   email = '';
   senha = '';
 
-  //constructor(private userService: UserService) {}
-
   onSubmit() {
+    // Crie um objeto para representar o usuário
     const usuario = {
       nome: this.nome,
       email: this.email,
       senha: this.senha
     };
 
-   // this.userService.cadastrarUsuario(usuario);
+    // Armazene o objeto de usuário no localStorage
+    localStorage.setItem('usuario', JSON.stringify(usuario));
 
-    // Limpar os campos após o cadastro
+    // Limpe os campos após o cadastro
     this.nome = '';
     this.email = '';
     this.senha = '';
 
+    // Exiba uma mensagem de sucesso (isso pode ser personalizado)
     alert('Cadastro realizado com sucesso!');
+
+    // Redirecione para a página de login ou outra página apropriada
+    // this.router.navigate(['/login']);
   }
 }
