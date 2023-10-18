@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { UserService } from '../user.service';
+//import { UserService } from '../user.service';
 
 @Component({
   selector: 'app-cadastro',
@@ -11,7 +11,7 @@ export class CadastroComponent {
   email = '';
   senha = '';
 
-  constructor(private userService: UserService) {}
+  //constructor(private userService: UserService) {}
 
   onSubmit() {
     const usuario = {
@@ -20,7 +20,7 @@ export class CadastroComponent {
       senha: this.senha
     };
 
-    this.userService.cadastrarUsuario(usuario);
+   // this.userService.cadastrarUsuario(usuario);
 
     // Limpar os campos após o cadastro
     this.nome = '';
