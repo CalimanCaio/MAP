@@ -4,11 +4,10 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class UserService {
-  constructor() {}
+  basePath: string = "http://localhost:8000/auth";
+  
 
-  cadastrarUsuario(usuario: any) {
-    const usuariosCadastrados = JSON.parse(localStorage.getItem('email')) || [];
-    usuariosCadastrados.push(usuario);
-    localStorage.setItem('email', JSON.stringify(usuariosCadastrados));
-  }
+  constructor(private http: HttpClient) {}
+
+  
 }

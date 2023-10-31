@@ -29,7 +29,5 @@ export class CadastroComponent {
     // Exiba uma mensagem de sucesso (isso pode ser personalizado)
     alert('Cadastro realizado com sucesso!');
 
-    // Redirecione para a página de login ou outra página apropriada
-    // this.router.navigate(['/login']);
   }
 }
