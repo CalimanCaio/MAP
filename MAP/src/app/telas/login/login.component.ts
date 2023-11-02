@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { take } from 'rxjs';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-login',
@@ -10,16 +12,16 @@ export class LoginComponent {
   email = '';
   password = '';
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private userService: UserService) {}
 
   onSubmit() {
-    // Verifique as credenciais (isso é um exemplo simplificado)
-    if (this.email === 'email' && this.password === 'senha') {
-      // Login bem-sucedido, redirecione para a página principal
-      this.router.navigate(['/home']);
-    } else {
-      // Exiba uma mensagem de erro de login
-      alert('Credenciais inválidas. Tente novamente.');
-    }
+    this.userService.login({ email: this.email, password: this.password}).pipe(take(1)).subscribe({
+      next: dt => {
+        this.router.navigate(['//////////////////']);
+      },
+      error: err => {
+        console.log(err);
+      },
+    })
   }
 }

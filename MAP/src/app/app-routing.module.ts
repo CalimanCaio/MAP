@@ -6,6 +6,7 @@ import { TelaInicialComponent } from './telas/tela-inicial/tela-inicial.componen
 import { MetodologiasComponent } from './telas/metodologias/metodologias.component';
 import { CriacaoMapComponent } from './telas/criacao-map/criacao-map.component';
 import { MapComponent } from './telas/map/map.component';
+import { MapInicialComponent } from './telas/map-inicial/map-inicial.component';
 
 const routes: Routes = [
   { path: '', component: TelaInicialComponent, pathMatch: 'full' },
@@ -14,7 +15,7 @@ const routes: Routes = [
   { path: 'metodologias', component: MetodologiasComponent},
   { path: 'criacao-map', component: CriacaoMapComponent},
   { path: 'map', component: MapComponent},
-
+  { path: 'map-inicial', component: MapInicialComponent},
 ];
 
 @NgModule({
