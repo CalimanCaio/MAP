@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-//import { UserService } from '../user.service';
+import { AuthService } from 'src/app/auth.service';
+// import { UserService } from '../user.service';
 
 @Component({
   selector: 'app-cadastro',
@@ -7,26 +8,40 @@ import { Component } from '@angular/core';
   styleUrls: ['./cadastro.component.css']
 })
 export class CadastroComponent {
-  nome = '';
+  username = '';
   email = '';
-  senha = '';
+  password = '';
+  first_name = '';
+  last_name = '';
 
-  //constructor(private userService: UserService) {}
+  constructor(private authService: AuthService) {}
 
   onSubmit() {
     const usuario = {
-      nome: this.nome,
+      username: this.username,
       email: this.email,
-      senha: this.senha
+      password: this.password,
+      first_name: "",
+      last_name: "",
     };
-
-   // this.userService.cadastrarUsuario(usuario);
+    // Call the AuthService to register the user
+    this.authService.registerUser(usuario).subscribe(
+      (response) => {
+        console.log(response)
+        alert('Cadastro realizado com sucesso!');
+      },
+      (error) => {
+        // Handle any registration errors
+        console.error('Registration error:', error);
+        // Display an error message to the user
+        alert('Erro ao cadastrar o usuário');
+      }
+    );
 
     // Limpar os campos após o cadastro
-    this.nome = '';
+    this.username = '';
     this.email = '';
-    this.senha = '';
+    this.password = '';
 
-    alert('Cadastro realizado com sucesso!');
   }
 }
