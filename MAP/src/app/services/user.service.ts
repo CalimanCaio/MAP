@@ -7,11 +7,12 @@ import { catchError, throwError } from 'rxjs';
 })
 export class UserService {
   basePath: string = "http://localhost:8000/api/auth";
-  
+
 
   constructor(private http: HttpClient) {}
 
   public login(body: any){
+    console.log('---------------------')
     return this.http.post(`${this.basePath}/`, body).pipe(
       catchError(err => {throw err})
     );
@@ -22,7 +23,7 @@ export class UserService {
       catchError(err => {throw err})
     );
   }
-  
+
   public refresh(body: any){
     return this.http.post(`${this.basePath}/refresh/`, body).pipe(
       catchError(err => {throw err})

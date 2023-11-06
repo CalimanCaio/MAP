@@ -9,19 +9,24 @@ import { UserService } from 'src/app/services/user.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  email = '';
+  username = '';
   password = '';
 
   constructor(private router: Router, private userService: UserService) {}
 
   onSubmit() {
-    this.userService.login({ email: this.email, password: this.password}).pipe(take(1)).subscribe({
-      next: dt => {
-        this.router.navigate(['//////////////////']);
+    const usuario = {
+      username: this.username,
+      password: this.password
+    }
+    // Call the login method from AuthService, assuming it is correctly implemented
+    this.userService.login(usuario).pipe(take(1)).subscribe({
+      next: dt =>{
+        // this.router.navigate['map-inicial'];
       },
       error: err => {
         console.log(err);
       },
-    })
+    });
   }
 }

@@ -10,6 +10,7 @@ import { MapComponent } from './telas/map/map.component';
 import { MetodologiasComponent } from './telas/metodologias/metodologias.component';
 import { HeaderComponent } from './header/header.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FormsModule } from '@angular/forms';
     CriacaoMapComponent,
     MapComponent,
     MetodologiasComponent,
-    HeaderComponent
+    HeaderComponent,
+    HttpClientModule
   ],
   imports: [
     BrowserModule,
