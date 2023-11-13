@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { AuthService } from 'src/app/auth.service';
-// import { UserService } from '../user.service';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-cadastro',
@@ -14,7 +13,7 @@ export class CadastroComponent {
   first_name = '';
   last_name = '';
 
-  constructor(private authService: AuthService) {}
+  constructor(private userService: UserService) {}
 
   onSubmit() {
     const usuario = {
@@ -25,7 +24,7 @@ export class CadastroComponent {
       last_name: "",
     };
     // Call the AuthService to register the user
-    this.authService.registerUser(usuario).subscribe(
+    this.userService.registerUser(usuario).subscribe(
       (response) => {
         console.log(response)
         alert('Cadastro realizado com sucesso!');

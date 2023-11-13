@@ -4,8 +4,15 @@
     </div>
     <div class="left-section">
       <a routerLink="/metodologias">Metodologias</a>
-      <a routerLink="/cadastro">Cadastro</a>
-      <a routerLink="/login">Login</a>
+      <ng-container *ngIf="isLoggedIn; else loginLinks">
+        <a routerLink="/criacao-map">Criar MAP</a>
+        <a routerLink="/map-inicial">Inicial Map</a>
+        <a routerLink="/logout" (click)="logout()">Sair</a>
+        <!-- Add more links as needed -->
+      </ng-container>
+      <ng-template #loginLinks>
+        <a routerLink="/cadastro">Cadastro</a>
+        <a routerLink="/login">Login</a>
+      </ng-template>
     </div>
   </header>
-  

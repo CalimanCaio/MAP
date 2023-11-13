@@ -1,4 +1,6 @@
+import { UserService } from 'src/app/services/user.service';
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -6,5 +8,24 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+  isLoggedIn = false;
+  constructor(private router: Router, private userService: UserService){
+    const accessToken = localStorage.getItem('access') || '';
+    if(accessToken){
+      this.isLoggedIn = !this.isLoggedIn;
+    }
+  }
+  logout() {
+    this.userService.logout().subscribe(
+      () => {
+        this.router.navigate(['map-inicial']);
+        alert('logged out');
+      },
+      error => {
+        console.error('Login failed:', error);
+        alert('falha no loginout');
+      }
+    );
+  }
 
 }

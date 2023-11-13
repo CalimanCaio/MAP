@@ -1,24 +1,38 @@
 .welcome-text {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .welcome-text h1 {
-    font-size: 40px;
-    color: #000;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
 
-  .btn-metodologias {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #0073e6; /* Cor de fundo do botão */
-    color: #fff; /* Cor do texto do botão */
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s ease; /* Transição suave de cor ao passar o mouse */
-  }
-  
-  .btn-metodologias:hover {
-    background-color: #0050a0; /* Cor de fundo do botão ao passar o mouse */
-  }
-  
+.welcome-text h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.welcome-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btn-metodologias {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  text-decoration: none;
+  background-color: #4c7bf2;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.btn-metodologias:hover {
+  background-color: #3258c8;
+}

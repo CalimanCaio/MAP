@@ -11,7 +11,7 @@ import { MetodologiasComponent } from './telas/metodologias/metodologias.compone
 import { HeaderComponent } from './header/header.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http'; // Import HttpClientModule
-
+import { MapInicialComponent } from './telas/map-inicial/map-inicial.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +21,8 @@ import { HttpClientModule } from '@angular/common/http'; // Import HttpClientMod
     CriacaoMapComponent,
     MapComponent,
     MetodologiasComponent,
-    HeaderComponent
+    HeaderComponent,
+    MapInicialComponent
   ],
   imports: [
     BrowserModule,
