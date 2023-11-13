@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component } from '@angular/core';
 import { AuthService } from 'src/app/auth.service'; // Make sure the path to auth.service is correct
 
@@ -8,10 +9,10 @@ import { AuthService } from 'src/app/auth.service'; // Make sure the path to aut
 })
 export class LoginComponent {
   username = '';
-  password = '';
+  password = ''; // Make sure to explicitly set the type to string
 
   // constructor() {} // Inject the AuthService
-  constructor(private authService: AuthService) {} // Inject the AuthService
+  constructor(private router: Router, private authService: AuthService) {} // Inject the AuthService
 
   onSubmit() {
     const usuario = {
@@ -23,6 +24,7 @@ export class LoginComponent {
       (response) => {
         console.log('Login successful:', response);
         alert('Login bem-sucedido');
+        this.router.navigate(['map-inicial']);
         // Handle success, e.g., navigate to another page
       },
       (error) => {
