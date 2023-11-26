@@ -1,18 +1,18 @@
 <div class="craicao-container">
-  <h2>Craicao</h2>
+  <h2>Criação</h2>
   <form (ngSubmit)="onSubmit()">
     <div class="form-group">
-      <h3 for="title">título</h3>
+      <h3 for="title">Título</h3>
       <input type="text" id="title" name="title" [(ngModel)]="title" required style="width: 500px;">
     </div>
     <div class="form-group">
-      <h3 for="description">descrição</h3>
+      <h3 for="description">Descrição</h3>
       <textarea id="description" name="description" [(ngModel)]="description" required
         style="height: 200px; width: 500px;"></textarea>
     </div>
     <div>
-      <h3>atividades</h3>
-    </div>
+      <h3>Atividades</h3>
+    
     <div class="form-group">
       <div class="retractable-list">
         <div>
@@ -20,35 +20,35 @@
 
           <ul *ngIf="isListVisible1" class="retractable-list">
             <li><label>
-                <input type="checkbox" id="item" name="method" value="item" [(ngModel)]="getactivities[0]" />
+                <input type="checkbox" id="item" name="method" value="item" [(ngModel)]="getActivities[1]" />
                 Product Backlog
               </label></li>
             <li><label>
-                <input type="checkbox" id="item1" name="method" value="item3" [(ngModel)]="getactivities[1]" />
+                <input type="checkbox" id="item1" name="method" value="item3" [(ngModel)]="getActivities[2]" />
                 Effort Estimation
               </label></li>
             <li><label>
-                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getactivities[2]" />
+                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getActivities[3]" />
                 Sprint
               </label></li>
             <li><label>
-                <input type="checkbox" id="item" name="method" value="item" [(ngModel)]="getactivities[3]" />
+                <input type="checkbox" id="item" name="method" value="item" [(ngModel)]="getActivities[4]" />
                 Sprint Planning Meeting
               </label></li>
             <li><label>
-                <input type="checkbox" id="item1" name="method" value="item3" [(ngModel)]="getactivities[4]" />
+                <input type="checkbox" id="item1" name="method" value="item3" [(ngModel)]="getActivities[5]" />
                 Sprint Backlog
               </label></li>
             <li><label>
-                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getactivities[5]" />
+                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getActivities[6]" />
                 Daily Scrum
               </label></li>
             <li><label>
-                <input type="checkbox" id="item" name="method" value="item" [(ngModel)]="getactivities[6]" />
+                <input type="checkbox" id="item" name="method" value="item" [(ngModel)]="getActivities[7]" />
                 Sprint Review Meeting
               </label></li>
             <li><label>
-                <input type="checkbox" id="item1" name="method" value="item3" [(ngModel)]="getactivities[7]" />
+                <input type="checkbox" id="item1" name="method" value="item3" [(ngModel)]="getActivities[8]" />
                 Planning Game
               </label></li>
           </ul>
@@ -58,51 +58,51 @@
           <h5><a class="toggle-button" (click)="toggleList2()"><b>XP ▼</b></a></h5>
           <ul *ngIf="isListVisible2" class="retractable-list">
             <li><label>
-                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getactivities[8]" />
+                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getActivities[9]" />
                 Peer Programming
               </label></li>
             <li><label>
-                <input type="checkbox" id="item" name="method" value="item" [(ngModel)]="getactivities[9]" />
+                <input type="checkbox" id="item" name="method" value="item" [(ngModel)]="getActivities[10]" />
                 Código Coletivo
               </label></li>
             <li><label>
-                <input type="checkbox" id="item1" name="method" value="item3" [(ngModel)]="getactivities[10]" />
+                <input type="checkbox" id="item1" name="method" value="item3" [(ngModel)]="getActivities[11]" />
                 Metáfora
               </label></li>
             <li><label>
-                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getactivities[11]" />
+                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getActivities[12]" />
                 Projeto Simples
               </label></li>
             <li><label>
-                <input type="checkbox" id="item" name="method" value="item" [(ngModel)]="getactivities[12]" />
+                <input type="checkbox" id="item" name="method" value="item" [(ngModel)]="getActivities[13]" />
                 Releases Curtos
               </label></li>
             <li><label>
-                <input type="checkbox" id="item1" name="method" value="item3" [(ngModel)]="getactivities[13]" />
+                <input type="checkbox" id="item1" name="method" value="item3" [(ngModel)]="getActivities[14]" />
                 Refactoring
               </label></li>
             <li><label>
-                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getactivities[14]" />
+                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getActivities[15]" />
                 Integração Contínua
               </label></li>
             <li><label>
-                <input type="checkbox" id="item" name="method" value="item" [(ngModel)]="getactivities[15]" />
+                <input type="checkbox" id="item" name="method" value="item" [(ngModel)]="getActivities[16]" />
                 Padrão de Desenvolvimento
               </label></li>
             <li><label>
-                <input type="checkbox" id="item1" name="method" value="item3" [(ngModel)]="getactivities[16]" />
+                <input type="checkbox" id="item1" name="method" value="item3" [(ngModel)]="getActivities[17]" />
                 Desenvolvimento Guiado por Testes
               </label></li>
             <li><label>
-                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getactivities[17]" />
+                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getActivities[18]" />
                 Cliente Presente
               </label></li>
             <li><label>
-                <input type="checkbox" id="item" name="method" value="item" [(ngModel)]="getactivities[18]" />
+                <input type="checkbox" id="item" name="method" value="item" [(ngModel)]="getActivities[19]" />
                 Semana de 40 horas
               </label></li>
             <li><label>
-                <input type="checkbox" id="item1" name="method" value="item3" [(ngModel)]="getactivities[19]" />
+                <input type="checkbox" id="item1" name="method" value="item3" [(ngModel)]="getActivities[20]" />
                 Eliminar desperdícios
               </label></li>
           </ul>
@@ -112,31 +112,31 @@
           <h5><a class="toggle-button" (click)="toggleList3()"><b>Lean ▼</b></a></h5>
           <ul *ngIf="isListVisible3" class="retractable-list">
             <li><label>
-                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getactivities[20]" />
+                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getActivities[21]" />
                 Amplificar o aprendizado
               </label></li>
             <li><label>
-                <input type="checkbox" id="item" name="method" value="item" [(ngModel)]="getactivities[21]" />
+                <input type="checkbox" id="item" name="method" value="item" [(ngModel)]="getActivities[22]" />
                 Decisão tardia
               </label></li>
             <li><label>
-                <input type="checkbox" id="item1" name="method" value="item3" [(ngModel)]="getactivities[22]" />
+                <input type="checkbox" id="item1" name="method" value="item3" [(ngModel)]="getActivities[23]" />
                 Entregas rápidas
               </label></li>
             <li><label>
-                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getactivities[23]" />
+                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getActivities[24]" />
                 Equipes Autônomas
               </label></li>
             <li><label>
-                <input type="checkbox" id="item" name="method" value="item" [(ngModel)]="getactivities[24]" />
+                <input type="checkbox" id="item" name="method" value="item" [(ngModel)]="getActivities[25]" />
                 Integridade
               </label></li>
             <li><label>
-                <input type="checkbox" id="item1" name="method" value="item3" [(ngModel)]="getactivities[25]" />
+                <input type="checkbox" id="item1" name="method" value="item3" [(ngModel)]="getActivities[26]" />
                 Visualizar o todo
               </label></li>
             <li><label>
-                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getactivities[26]" />
+                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getActivities[27]" />
                 Especulação
               </label></li>
           </ul>
@@ -146,11 +146,11 @@
           <h5><a class="toggle-button" (click)="toggleList4()"><b>ASD ▼</b></a></h5>
           <ul *ngIf="isListVisible4" class="retractable-list">
             <li><label>
-                <input type="checkbox" id="item" name="method" value="item" [(ngModel)]="getactivities[27]" />
+                <input type="checkbox" id="item" name="method" value="item" [(ngModel)]="getActivities[28]" />
                 Colaboração
               </label></li>
             <li><label>
-                <input type="checkbox" id="item1" name="method" value="item3" [(ngModel)]="getactivities[28]" />
+                <input type="checkbox" id="item1" name="method" value="item3" [(ngModel)]="getActivities[29]" />
                 Aprendizagem
               </label></li>
           </ul>
@@ -160,27 +160,27 @@
           <h5><a class="toggle-button" (click)="toggleList5()"><b>FDD ▼</b></a></h5>
           <ul *ngIf="isListVisible5" class="retractable-list">
             <li><label>
-                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getactivities[29]" />
+                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getActivities[30]" />
                 Entregas rápidas
               </label></li>
             <li><label>
-                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getactivities[30]" />
+                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getActivities[31]" />
                 Features
               </label></li>
             <li><label>
-                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getactivities[31]" />
+                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getActivities[32]" />
                 Planejamento detalhado
               </label></li>
             <li><label>
-                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getactivities[32]" />
+                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getActivities[33]" />
                 Rastreabilidade e relatórios precisos
               </label></li>
             <li><label>
-                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getactivities[33]" />
+                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getActivities[34]" />
                 Monitoramento com Resumos
               </label></li>
             <li><label>
-                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getactivities[34]" />
+                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getActivities[35]" />
                 Avaliação e Estimativas
               </label></li>
           </ul>
@@ -190,39 +190,39 @@
           <h5><a class="toggle-button" (click)="toggleList6()"><b>DSDM ▼</b></a></h5>
           <ul *ngIf="isListVisible6" class="retractable-list">
             <li><label>
-                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getactivities[35]" />
+                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getActivities[36]" />
                 Envolvimento ativo do usuário
               </label></li>
             <li><label>
-                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getactivities[36]" />
+                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getActivities[37]" />
                 Empoderamento das pessoas com autoridade para tomar decisões
               </label></li>
             <li><label>
-                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getactivities[37]" />
+                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getActivities[38]" />
                 Foco na entrega frequente de produtos
               </label></li>
             <li><label>
-                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getactivities[38]" />
+                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getActivities[39]" />
                 Alinhamento com o objetivo do negócio
               </label></li>
             <li><label>
-                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getactivities[39]" />
+                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getActivities[40]" />
                 Desenvolvimento iterativo e incremental
               </label></li>
             <li><label>
-                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getactivities[40]" />
+                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getActivities[41]" />
                 Capacidade de reversão de mudanças
               </label></li>
             <li><label>
-                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getactivities[41]" />
+                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getActivities[42]" />
                 Alinhamento de requisitos em um nível mais alto
               </label></li>
             <li><label>
-                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getactivities[42]" />
+                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getActivities[43]" />
                 Teste integrado ao longo do ciclo de vida
               </label></li>
             <li><label>
-                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getactivities[43]" />
+                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getActivities[44]" />
                 Colaboração e cooperação entre as partes interessadas
               </label></li>
           </ul>
@@ -232,11 +232,11 @@
           <h5><a class="toggle-button" (click)="toggleList7()"><b>Crystal ▼</b></a></h5>
           <ul *ngIf="isListVisible7" class="retractable-list">
             <li><label>
-                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getactivities[44]" />
+                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getActivities[45]" />
                 Desenvolvimento incremental
               </label></li>
             <li><label>
-                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getactivities[45]" />
+                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getActivities[46]" />
                 Oficinas de reflexão
               </label></li>
           </ul>
@@ -246,28 +246,28 @@
           <h5><a class="toggle-button" (click)="toggleList8()"><b>Kanban ▼</b></a></h5>
           <ul *ngIf="isListVisible8" class="retractable-list">
             <li><label>
-                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getactivities[46]" />
+                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getActivities[47]" />
                 Visualizar o trabalho em andamento
               </label></li>
             <li><label>
-                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getactivities[47]" />
+                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getActivities[48]" />
                 Visualizar cada etapa da cadeia de valor, desde o conceito geral até o lançamento de
                   software
               </label></li>
             <li><label>
-                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getactivities[48]" />
+                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getActivities[49]" />
                 Limitar o Trabalho em Progresso (WIP - Work in Progress)
               </label></li>
             <li><label>
-                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getactivities[49]" />
+                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getActivities[50]" />
                 Tornar explícitas as políticas que estão sendo seguidas
               </label></li>
             <li><label>
-                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getactivities[50]" />
+                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getActivities[51]" />
                 Medir e gerenciar o fluxo de trabalho
               </label></li>
             <li><label>
-                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getactivities[51]" />
+                <input type="checkbox" id="item2" name="method" value="item2" [(ngModel)]="getActivities[52]" />
                 Identificar oportunidades de melhoria
               </label></li>
           </ul>
@@ -275,6 +275,8 @@
 
       </div>
     </div>
-    <button class="primary-button" type="submit">Craicao</button>
+    </div>
+    <button class="primary-button" type="submit">Criação</button>
   </form>
 </div>
+

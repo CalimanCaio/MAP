@@ -48,6 +48,7 @@
 
 .retractable-list li {
   margin-bottom: 10px;
+  text-align: left;
 }
 
 .retractable-list li b {

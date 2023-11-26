@@ -24,60 +24,28 @@ export class MapInicialComponent implements OnInit{
           this.minhasMaps = response as any[];
           console.log(this.minhasMaps);
         } else {
-          console.error('Response is not an array of objects');
+          console.error('A resposta não é um array de atividades.');
         }
       },
       (error) => {
-        console.error('Failed to load map data', error);
+        console.error('Falha em carregar as MAPs.', error);
         localStorage.setItem('access', '');
       }
     );
   }
 
-
-
   showEditForm: boolean = false;
   selectedMap: any;
   deletedMapId: any[] = [];
   showModal = false;
-  getactivities: any [] = [];
+  activities: any[] = [];
   title: string = "";
   description: string = "";
-  isListVisible1 = false;
-  isListVisible2 = false;
-  isListVisible3 = false;
-  isListVisible4 = false;
-  isListVisible5 = false;
-  isListVisible6 = false;
-  isListVisible7 = false;
-  isListVisible8 = false;
-  toggleList1(){
-    this.isListVisible1 = !this.isListVisible1;
-  }
-  toggleList2(){
-    this.isListVisible2 = !this.isListVisible2;
-  }
-  toggleList3(){
-    this.isListVisible3 = !this.isListVisible3;
-  }
-  toggleList4(){
-    this.isListVisible4 = !this.isListVisible4;
-  }
-  toggleList5(){
-    this.isListVisible5 = !this.isListVisible5;
-  }
-  toggleList6(){
-    this.isListVisible6 = !this.isListVisible6;
-  }
-  toggleList7(){
-    this.isListVisible7 = !this.isListVisible7;
-  }
-  toggleList8(){
-    this.isListVisible8 = !this.isListVisible8;
-  }
+  
   editMap(map: any) {
     this.title = map.title; // Set the title variable with the map's title
     this.description = map.description; // Set the description variable with the map's description
+    this.activities = map.activities[map.id];
     this.showModal = true; // Show the modal
   }
   hidenModal(){
@@ -89,10 +57,10 @@ export class MapInicialComponent implements OnInit{
     this.deletedMapId.push(map);
     this.mapService.deleteMap(this.accessToken, map).subscribe(
       (response: any) => {
-        alert('delete map');
+        alert('MAP deletada.');
       },
       (error) => {
-        alert('failed to delete')
+        alert('Falha em deletar MAP.')
       }
     )
   }
@@ -102,12 +70,12 @@ export class MapInicialComponent implements OnInit{
     // Your save logic goes here
     this.mapService.putMap(this.accessToken, '', 1).subscribe(
       (response: any) => {
-        alert('create Map successfully');
+        alert('MAP editada com sucesso!');
         this.router.navigate(['map-inicial']);
       },
       (error) => {
         console.error('createMap failed:', error);
-        alert('falha no createMap');
+        alert('Falha na edição da MAP.');
       }
     );
   }

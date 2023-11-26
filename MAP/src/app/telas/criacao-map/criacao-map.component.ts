@@ -20,7 +20,7 @@ export class CriacaoMapComponent {
   isListVisible8 = false;
 
   checkedCheckboxIds: string[] = [];
-  getactivities: any[] = [];
+  getActivities: any[] = [];
   accessToken = (localStorage.getItem('access') || '').replace(/"/g, '');
   title = '';
   description = ''; // Make sure to explicitly set the type to string
@@ -55,7 +55,7 @@ export class CriacaoMapComponent {
   }
 
   onSubmit() {
-    const trueIds = this.getactivities.reduce((acc: number[], value: boolean, index: number) => {
+    const trueIds = this.getActivities.reduce((acc: number[], value: boolean, index: number) => {
       if (value === true) {
         acc.push(index);
       }
@@ -69,12 +69,12 @@ export class CriacaoMapComponent {
     console.log('0000000000000000000000000000', createMap, '0000000000000000000000000000')
     this.mapService.postMap(this.accessToken, createMap).subscribe(
       (response: any) => {
-        alert('create Map successfully');
+        alert('MAP criada com sucesso!');
         this.router.navigate(['map-inicial']);
       },
       (error) => {
         console.error('createMap failed:', error);
-        alert('falha no createMap');
+        alert('Falha ao criar a MAP.');
       }
     );
   }

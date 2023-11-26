@@ -5,9 +5,9 @@
     <div class="left-section">
       <a routerLink="/metodologias">Metodologias</a>
       <ng-container *ngIf="isLoggedIn; else loginLinks">
+        <a routerLink="/map-inicial">Tela Inicial</a>
         <a routerLink="/criacao-map">Criar MAP</a>
-        <a routerLink="/map-inicial">Inicial Map</a>
-        <a routerLink="/logout" (click)="logout()">Sair</a>
+        <a routerLink="/" (click)="logout()">Sair</a>
         <!-- Add more links as needed -->
       </ng-container>
       <ng-template #loginLinks>

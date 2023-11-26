@@ -18,12 +18,12 @@ export class HeaderComponent {
   logout() {
     this.userService.logout().subscribe(
       () => {
-        this.router.navigate(['map-inicial']);
-        alert('logged out');
+        this.router.navigate(['']);
+        alert('Você deslogou.');
       },
       error => {
         console.error('Login failed:', error);
-        alert('falha no loginout');
+        alert('Falha em deslogar.');
       }
     );
   }

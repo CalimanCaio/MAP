@@ -38,7 +38,7 @@ export class MapService {
     const headers = new HttpHeaders({
       'Authorization': `Bearer ${token}`
     });
-    return this.http.post(`${this.basePath}/${id}`, id, { headers: headers });
+    return this.http.get(`${this.basePath}/${id}`, { headers: headers });
   }
 
   public putMap(token: string, body: any, id: number){
